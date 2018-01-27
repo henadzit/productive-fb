@@ -1,0 +1,16 @@
+.profb-zuck {
+  transform: rotate(180deg);
+  animation: zuckHeadMoveDown 60s infinite;
+  position: fixed;
+  top: -100px;
+  left: 10%;
+  width: 100px;
+  height: 89px;
+  background-image: url("https://s3.amazonaws.com/henadzit-public/mark-zuckerberg.png");
+}
+
+@keyframes zuckHeadMoveDown {
+  5%  { top: -100px; }
+  7%  { top: 0; }
+  8%  { top: -100px; }
+}

@@ -4,6 +4,7 @@ chrome.extension.sendMessage({}, function(response) {
       clearInterval(readyStateCheckInterval);
 
       initImages();
+      windowHandler();
     }
   }, 10);
 });
