@@ -27,6 +27,7 @@
       "js": [
           "src/inject/inject.js"
           "src/inject/compoments/header.js",
+          "src/jquery-3.3.1.min.js", "src/inject/inject.js"
       ]
     }
   ]
