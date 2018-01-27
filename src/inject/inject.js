@@ -3,9 +3,8 @@ chrome.extension.sendMessage({}, function(response) {
     if (document.readyState === "complete") {
       clearInterval(readyStateCheckInterval);
 
-
+      initImages();
       windowHandler();
-      //// PUT YOUR CODE HERE
     }
   }, 10);
 });
