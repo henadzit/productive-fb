@@ -5,6 +5,7 @@ chrome.extension.sendMessage({}, function(response) {
 
       initImages();
       windowHandler();
+      malikovChair();
     }
   }, 10);
 });

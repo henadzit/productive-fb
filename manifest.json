@@ -23,7 +23,8 @@
         "src/inject/components/header.css",
         "src/inject/components/post.css",
         "src/inject/components/images.css",
-        "src/inject/components/window.css"
+        "src/inject/components/window.css",
+        "src/inject/components/malikov-chair.css"
       ]
     },
     {
@@ -35,7 +36,8 @@
         "src/inject/inject.js",
         "src/inject/components/header.js",
         "src/inject/components/images.js",
-        "src/inject/components/window.js"
+        "src/inject/components/window.js",
+        "src/inject/components/malikov-chair.js"
       ]
     }
   ]
