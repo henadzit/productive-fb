@@ -16,7 +16,8 @@
         "https://www.facebook.com/*"
       ],
       "css": [
-        "src/inject/inject.css"
+          "src/inject/inject.css",
+          "src/inject/components/header.css"
       ]
     },
     {
