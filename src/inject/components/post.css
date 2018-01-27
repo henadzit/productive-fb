@@ -1,10 +1,12 @@
 .commentable_item {
-  animation-delay: 7s;
+  animation-delay: 30s;
   -webkit-animation-name: spaceboots;
 	-webkit-animation-duration: 1.3s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 @-webkit-keyframes spaceboots {
@@ -19,4 +21,63 @@
 	80% { -webkit-transform: translate(-1px, -1px) rotate(3deg); }
 	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
 	100% { -webkit-transform: translate(1px, -2px) rotate(-3deg); }
+}
+
+.userContentWrapper {
+  /* for order */
+
+  /* display: -webkit-box; */
+  /* display: -moz-box; */
+  /* display: -ms-flexbox; */
+  /* display: -moz-flex; */
+  /* display: -webkit-flex; */
+  /* display: flex; */
+  /* -webkit-flex-flow: row wrap; */
+  /* flex-flow: row wrap; */
+
+
+
+
+  animation-delay: 70s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: fadeOut;
+	-webkit-animation-duration: 1.3s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    color: transparent;
+    text-shadow: 0 0 0px rgba(0,0,0,1);
+  }
+  100% {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+  }
+}
+
+.userContentWrapper a, .userContentWrapper a div, .userContentWrapper video {
+  animation-delay: 90s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: fadeOutImg;
+	-webkit-animation-duration: 1.3s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeOutImg {
+  0% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.userContentWrapper div:nth-child(2) {
+  width: 100%;
+}
+
+.userContentWrapper div:nth-child(1) {
+  animation-delay: 5s;
+  order: 1;
 }
