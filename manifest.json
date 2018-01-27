@@ -21,7 +21,8 @@
       "css": [
         "src/inject/inject.css",
         "src/inject/components/header.css",
-        "src/inject/components/post.css"
+        "src/inject/components/post.css",
+        "src/inject/components/window.css"
       ]
     },
     {
@@ -31,7 +32,8 @@
       "js": [
         "src/jquery-3.3.1.min.js",
         "src/inject/inject.js",
-        "src/inject/components/header.js"
+        "src/inject/components/header.js",
+        "src/inject/components/window.js"
       ]
     }
   ]

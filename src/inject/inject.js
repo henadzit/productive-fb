@@ -3,6 +3,8 @@ chrome.extension.sendMessage({}, function(response) {
     if (document.readyState === "complete") {
       clearInterval(readyStateCheckInterval);
 
+
+      windowHandler();
       //// PUT YOUR CODE HERE
     }
   }, 10);
