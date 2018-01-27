@@ -1,7 +1,12 @@
 function windowHandler() {
-  var zuckEl = jQuery('body').append('<div class="profb-zuck"></div>')
+  var zuckLeftClass = "profb-zuck-left";
+  var zuckBottomClass = "profb-zuck-bottom"
+  jQuery('body').append('<div class="' + zuckLeftClass + '"></div>')
+  jQuery('body').append('<div class="' + zuckBottomClass + '"></div>')
+
   setInterval(function() {
-    var leftPos = Math.floor(Math.random() * 80) + 10 + "%"
-    jQuery('.profb-zuck').css({ left: leftPos })
-  }, 50000)
+    var dynPos = Math.floor(Math.random() * 80) + 10 + "%"
+    jQuery('.' + zuckLeftClass).css({ top: dynPos })
+    jQuery('.' + zuckBottomClass).css({ left: dynPos })
+  }, 30000)
 }

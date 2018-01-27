@@ -8,7 +8,8 @@ class Malikov {
   constructor() {
     this.isRun = false;
     this.startAt = 4000;
-    this.musicStartAt = 23800;
+    this.rotateImagesAt = 23800;
+    this.flashLightsAt = 84000;
 
     $('body').append("<audio id=\"malikovAudio\" preload loop><source src=\"https://s3.amazonaws.com/henadzit-public/malikov.mp3\"></audio>")
   }
@@ -19,10 +20,15 @@ class Malikov {
   }
 
   run() {
+    $("body").addClass("malikov-1");
     $("#malikovAudio")[0].play();
 
     setTimeout(function() {
-      $("body").addClass("malikov");
-    }, this.musicStartAt);
+      $("body").addClass("malikov-2");
+    }, this.rotateImagesAt);
+
+    setTimeout(function() {
+      $("body").addClass("malikov-3");
+    }, this.flashLightsAt);
   }
 }

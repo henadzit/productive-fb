@@ -6,6 +6,7 @@ chrome.extension.sendMessage({}, function(response) {
       initImages();
       windowHandler();
       hideSideNavLinks();
+      malikovChair();
     }
   }, 10);
 });

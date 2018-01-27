@@ -1,16 +1,34 @@
-.profb-zuck {
-  transform: rotate(180deg);
-  animation: zuckHeadMoveDown 60s infinite;
+.profb-zuck-left {
+  transform: rotate(90deg);
+  animation: zuckHeadMoveFromLeft 30s infinite;
   position: fixed;
-  top: -100px;
-  left: 10%;
-  width: 100px;
+  left: -89px;
+  top: 50%;
+  width: 89px;
   height: 89px;
+  z-index: 10000;
   background-image: url("https://s3.amazonaws.com/henadzit-public/mark-zuckerberg.png");
 }
 
-@keyframes zuckHeadMoveDown {
-  5%  { top: -100px; }
-  7%  { top: 0; }
-  8%  { top: -100px; }
+@keyframes zuckHeadMoveFromLeft {
+  30%  { left: -89px; }
+  34%  { left: 0; }
+  36%  { left: -89px; }
+}
+
+.profb-zuck-bottom {
+  animation: zuckHeadMoveFromBottom 30s infinite;
+  position: fixed;
+  left: 50%;
+  bottom: -100px;
+  width: 100px;
+  height: 100px;
+  z-index: 10000;
+  background-image: url("https://s3.amazonaws.com/henadzit-public/mark-zuckerberg2.png");
+}
+
+@keyframes zuckHeadMoveFromBottom {
+  80%  { bottom: -100px; }
+  84%  { bottom: 0; }
+  86%  { bottom: -100px; }
 }
