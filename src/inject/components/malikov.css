@@ -1,0 +1,27 @@
+.malikov-2 #stories_pagelet_rhc div div div div a img,
+.malikov-2 img.img:not(.scaledImageFitWidth) {
+    animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+body.malikov-3, body.malikov-3 .homeWiderContent {
+    animation: colorchange 2s infinite linear;
+}
+
+@keyframes colorchange {
+    0%  {background-color: #FFC312;}
+    10% {background-color: #FFC312;}
+    11$ {background-color: #C4E538;}
+    30% {background-color: #C4E538;}
+    31% {background-color: #12CBC4;}
+    50% {background-color: #12CBC4;}
+    51% {background-color: #FDA7DF;}
+    70% {background-color: #FDA7DF;}
+    71% {background-color: #ED4C67;}
+    90% {background-color: #ED4C67;}
+    91% {background-color: #FFC312;}
+    100% {background-color: #FFC312;}
+}
