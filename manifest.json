@@ -25,7 +25,8 @@
         "https://www.facebook.com/*"
       ],
       "js": [
-        "src/inject/inject.js"
+          "src/inject/inject.js"
+          "src/inject/compoments/header.js",
       ]
     }
   ]
