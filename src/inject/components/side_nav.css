@@ -1,0 +1,29 @@
+.sideNavItem__action {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+
+  position: relative;
+  -webkit-animation: sideNavGone 5s 2;
+  -webkit-animation-direction: alternate;
+  animation: sideNavGone 5s 2;
+  animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes sideNavGone {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+
+/* @-webkit-keyframes sideNavGone { */
+/* 	from { */
+/*     left: 0px; */
+/*   } */
+/* 	to { */
+/*     left: -1000px; */
+/*   } */
+/* } */

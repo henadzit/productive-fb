@@ -1,10 +1,13 @@
 #bluebarRoot {
   animation-delay: 30s;
+  -webkit-animation-delay: 30s;
   -webkit-animation-name: headerRotate;
 	-webkit-animation-duration: 1.3s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+
+  position: fixed;
 }
 
 @-webkit-keyframes headerRotate {

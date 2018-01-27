@@ -1,5 +1,6 @@
 .commentable_item {
   animation-delay: 30s;
+  -webkit-animation-delay: 30s;
   -webkit-animation-name: spaceboots;
 	-webkit-animation-duration: 1.3s;
 	-webkit-transform-origin:50% 50%;
@@ -37,9 +38,9 @@
 
 
 
-
   animation-delay: 70s;
   animation-fill-mode: forwards;
+  -webkit-animation-delay: 70s;
   -webkit-animation-name: fadeOut;
 	-webkit-animation-duration: 1.3s;
 	-webkit-transform-origin:50% 50%;
@@ -61,6 +62,7 @@
 .userContentWrapper a, .userContentWrapper a div, .userContentWrapper video {
   animation-delay: 90s;
   animation-fill-mode: forwards;
+  -webkit-animation-delay: 90s;
   -webkit-animation-name: fadeOutImg;
 	-webkit-animation-duration: 1.3s;
 	-webkit-transform-origin:50% 50%;
@@ -77,7 +79,7 @@
   width: 100%;
 }
 
-.userContentWrapper div:nth-child(1) {
-  animation-delay: 5s;
-  order: 1;
-}
+/* .userContentWrapper div:nth-child(1) { */
+/*   animation-delay: 5s; */
+/*   order: 1; */
+/* } */
