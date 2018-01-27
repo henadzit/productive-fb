@@ -1,10 +1,12 @@
 .commentable_item {
-  animation-delay: 7s;
+  animation-delay: 30s;
   -webkit-animation-name: spaceboots;
 	-webkit-animation-duration: 1.3s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 @-webkit-keyframes spaceboots {
@@ -19,4 +21,25 @@
 	80% { -webkit-transform: translate(-1px, -1px) rotate(3deg); }
 	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
 	100% { -webkit-transform: translate(1px, -2px) rotate(-3deg); }
+}
+
+.userContentWrapper {
+  /* display: -webkit-box; */
+  /* display: -moz-box; */
+  /* display: -ms-flexbox; */
+  /* display: -moz-flex; */
+  /* display: -webkit-flex; */
+  /* display: flex; */
+
+  /* -webkit-flex-flow: row wrap; */
+  /* flex-flow: row wrap; */
+}
+
+.userContentWrapper div:nth-child(2) {
+  width: 100%;
+}
+
+.userContentWrapper div:nth-child(1) {
+  animation-delay: 5s;
+  order: 1;
 }
