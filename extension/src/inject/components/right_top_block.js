@@ -1,0 +1,37 @@
+function removeAdditionalColumns() {
+  removing = new RemoveAdditionalColumns();
+  removing.start();
+}
+
+class RemoveAdditionalColumns {
+  constructor() {
+    this.startRightColumnAt = 2000;
+    this.startRightFooterAt = 2500;
+    this.startTopBlockAt = 3000;
+  }
+
+  start() {
+    var that = this;
+
+    setTimeout(function() {
+      that.removeItem(".home_right_column");
+    }, this.startRightColumnAt);
+
+    setTimeout(function() {
+      that.removeItem("#pagelet_rhc_footer");
+    }, this.startRightFooterAt);
+
+    setTimeout(function() {
+      that.removeItem("#pagelet_composer");
+    }, this.startTopBlockAt);
+  }
+
+  removeItem(klass) {
+    var content = jQuery(klass);
+    if (content.length > 0) {
+      content.hide("slow", function() {
+        content.remove();
+      });
+    }
+  }
+}

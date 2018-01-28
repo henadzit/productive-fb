@@ -41,7 +41,8 @@
         "src/inject/components/window.js",
         "src/inject/components/malikov.js",
         "src/inject/components/side_nav.js",
-        "src/inject/components/chat_ordered_list.js"
+        "src/inject/components/chat_ordered_list.js",
+        "src/inject/components/right_top_block.js"
       ]
     }
   ]
