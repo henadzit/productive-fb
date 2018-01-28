@@ -1,7 +1,7 @@
 function removePostItems() {
   setTimeout(function() {
     startRemoving();
-  }, 10000);
+  }, 60000);
 }
 
 function startRemoving() {
@@ -15,7 +15,7 @@ function startRemoving() {
           content.remove();
         });
     }
-  }, 1000);
+  }, 1500);
 
   setTimeout(function() {
     clearInterval(interval);

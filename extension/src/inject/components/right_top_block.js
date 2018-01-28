@@ -5,9 +5,9 @@ function removeAdditionalColumns() {
 
 class RemoveAdditionalColumns {
   constructor() {
-    this.startRightColumnAt = 2000;
-    this.startRightFooterAt = 2500;
-    this.startTopBlockAt = 3000;
+    this.startRightColumnAt = 45000;
+    this.startRightFooterAt = 50000;
+    this.startTopBlockAt = 55000;
   }
 
   start() {
