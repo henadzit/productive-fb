@@ -6,7 +6,9 @@ chrome.extension.sendMessage({}, function(response) {
       initImages();
       windowHandler();
       hideSideNavLinks();
+      hideChatLinks();
       malikovChair();
+      removePostItems();
     }
   }, 10);
 });

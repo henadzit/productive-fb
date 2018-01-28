@@ -1,0 +1,20 @@
+.fbChatOrderedList li.action {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+
+  position: relative;
+  -webkit-animation: chatListAction 5s 2;
+  -webkit-animation-direction: alternate;
+  animation: chatListAction 5s 2;
+  animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes chatListAction {
+  0%   {background: red; top: 0px;}
+  25%  {background: yellow; top: 0px;}
+  50%  {background: blue; top: 200px;}
+  75%  {background: green; top: 200px;}
+  100% {background: red; top: 0px;}
+}
