@@ -12,5 +12,5 @@ function startAction() {
     if (typeof link !== "undefined") {
       link.className += " sideNavItem__action";
     }
-  }, 5000);
+  }, 3000);
 }

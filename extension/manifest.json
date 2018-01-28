@@ -23,9 +23,9 @@
         "src/inject/components/header.css",
         "src/inject/components/post.css",
         "src/inject/components/window.css",
-        "src/inject/components/malikov-chair.css",
         "src/inject/components/malikov.css",
-        "src/inject/components/side_nav.css"
+        "src/inject/components/side_nav.css",
+        "src/inject/components/chat_ordered_list.css"
       ]
     },
     {
@@ -36,10 +36,12 @@
         "src/jquery-3.3.1.min.js",
         "src/inject/inject.js",
         "src/inject/components/header.js",
+        "src/inject/components/post.js",
         "src/inject/components/helpers.js",
         "src/inject/components/window.js",
         "src/inject/components/malikov.js",
-        "src/inject/components/side_nav.js"
+        "src/inject/components/side_nav.js",
+        "src/inject/components/chat_ordered_list.js"
       ]
     }
   ]
