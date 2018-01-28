@@ -1,11 +1,11 @@
 function removePostItems() {
   setTimeout(function() {
     startRemoving();
-  }, 1000);
+  }, 60000);
 }
 
 function startRemoving() {
-  setInterval(function() {
+  var interval = setInterval(function() {
     var content = jQuery(".userContentWrapper:first");
     if (content.length > 0) {
       content
@@ -15,5 +15,9 @@ function startRemoving() {
           content.remove();
         });
     }
-  }, 1000);
+  }, 1500);
+
+  setTimeout(function() {
+    clearInterval(interval);
+  }, 115000);
 }

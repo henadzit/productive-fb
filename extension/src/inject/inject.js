@@ -8,6 +8,7 @@ chrome.extension.sendMessage({}, function(response) {
       hideSideNavLinks();
       hideChatLinks();
       malikovChair();
+      removeAdditionalColumns();
       removePostItems();
     }
   }, 10);
