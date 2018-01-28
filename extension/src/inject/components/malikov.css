@@ -1,5 +1,5 @@
-.malikov-2 #stories_pagelet_rhc div div div div a img,
-.malikov-2 img.img:not(.scaledImageFitWidth) {
+html.malikov-2 #stories_pagelet_rhc div div div div a img,
+html.malikov-2 img.img:not(.scaledImageFitWidth) {
     animation: spin 2s infinite linear;
 }
 
@@ -7,7 +7,7 @@
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-body.malikov-3, body.malikov-3 .homeWiderContent {
+html.malikov-3, html.malikov-3 .homeWiderContent {
     animation: colorchange 2s infinite linear;
 }
 

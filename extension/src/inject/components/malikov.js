@@ -20,15 +20,15 @@ class Malikov {
   }
 
   run() {
-    $("body").addClass("malikov-1");
+    $("html").addClass("malikov-1");
     $("#malikovAudio")[0].play();
 
     setTimeout(function() {
-      $("body").addClass("malikov-2");
+      $("html").addClass("malikov-2");
     }, this.rotateImagesAt);
 
     setTimeout(function() {
-      $("body").addClass("malikov-3");
+      $("html").addClass("malikov-3");
     }, this.flashLightsAt);
   }
 }
