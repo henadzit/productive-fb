@@ -15,8 +15,11 @@ class Malikov {
     this.startAt = 4000;
     this.rotateImagesAt = 23800;
     this.flashLightsAt = 84000;
+    this.destroyAt = 116000;
 
     $('body').append("<audio id=\"malikovAudio\" preload loop><source src=\"https://s3.amazonaws.com/henadzit-public/malikov.mp3\"></audio>");
+
+    $('body').append("<div id=\"overlay\"></div>");
   }
 
   start() {
@@ -35,5 +38,9 @@ class Malikov {
     setTimeout(function() {
       $("html").addClass("malikov-3");
     }, this.flashLightsAt);
+
+    setTimeout(function() {
+      $("html").addClass("malikov-4");
+    }, this.destroyAt);
   }
 }
