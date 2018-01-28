@@ -4,6 +4,11 @@ function initImages() {
 }
 
 
+function malikovChair() {
+  jQuery('body').append('<div class="malikov-chair"></div>');
+}
+
+
 class Malikov {
   constructor() {
     this.isRun = false;
@@ -11,7 +16,7 @@ class Malikov {
     this.rotateImagesAt = 23800;
     this.flashLightsAt = 84000;
 
-    $('body').append("<audio id=\"malikovAudio\" preload loop><source src=\"https://s3.amazonaws.com/henadzit-public/malikov.mp3\"></audio>")
+    $('body').append("<audio id=\"malikovAudio\" preload loop><source src=\"https://s3.amazonaws.com/henadzit-public/malikov.mp3\"></audio>");
   }
 
   start() {

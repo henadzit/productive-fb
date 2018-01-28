@@ -25,3 +25,25 @@ html.malikov-3, html.malikov-3 .homeWiderContent, html.malikov-3 body {
     91% {background-color: #FFC312;}
     100% {background-color: #FFC312;}
 }
+
+.malikov-chair {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    z-index: 10000;
+    background-image: url("https://s3.amazonaws.com/henadzit-public/malikov_small.gif");
+}
+
+html.malikov-2 .malikov-chair {
+    display: block;
+    animation: straightLine 10s infinite linear;
+}
+
+@keyframes straightLine {
+    50% {
+        transform: translate3D(1100px, 0, 0);
+    }
+}

@@ -23,7 +23,6 @@
         "src/inject/components/header.css",
         "src/inject/components/post.css",
         "src/inject/components/window.css",
-        "src/inject/components/malikov-chair.css",
         "src/inject/components/malikov.css",
         "src/inject/components/side_nav.css"
       ]
